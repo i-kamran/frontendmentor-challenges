@@ -47,7 +47,7 @@ body {
   align-items: flex-start;
   background-color: var(--white);
 
-  width: clamp(250px, 98vw, 400px);
+  width: clamp(250px, 95vw, 400px);
   padding: clamp(15px, 7vw, 30px);
   border-radius: 20px;
 
