@@ -7,29 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap"
-      rel="stylesheet"
-      media="all"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css" />
+
     <title>Log preview card</title>
     <title>Frontend Mentor | Blog preview card</title>
   </head>
@@ -41,6 +25,7 @@
         width="336"
         height="201"
         alt="Abstract image"
+        fetchpriority="high"
       />
       <div class="card_content">
         <span class="card__tag">Learning</span>
