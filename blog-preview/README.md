@@ -24,7 +24,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![screenshot.png](../screenshot.png)
+![screenshot.png](./screenshot.png)
 
 ### Links
 
