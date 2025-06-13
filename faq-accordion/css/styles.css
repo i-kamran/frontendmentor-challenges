@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  height: 100%;
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --bg-color: hsl(275, 100%, 97%);
+  --color-highlight: hsl(293, 16%, 49%);
+  --color-text: hsl(292, 42%, 14%);
+  --accent-color: hsl(293, 20%, 49%);
+  /* Fonts*/
+  --fs-large: 2.5rem;
+  --fs-medium: 1.5rem;
+  --fs-small: 1rem;
+  --fw-large: 700;
+  --fw-medium: 600;
+  --fw-small: 400;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../assets/images/background-pattern-mobile.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contains;
+  padding-top: 160px;
+}
+
+.accordion {
+  background-color: var(--white);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 0 48px 8px hsla(0, 0%, 40%, 0.5);
+  width: min(85vw, 600px);
+}
+
+.accordion__title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.accordion__title img {
+  max-height: 30px;
+  width: auto;
+  padding-right: 12px;
+}
+.accordion__title h1 {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-large);
+  color: var(--color-text);
+}
+
+.accordion__item {
+  padding-bottom: 12px;
+}
+.accordion__item[open] > summary .accordion__icon {
+  content: url("../assets/images/icon-minus.svg");
+}
+.accordion__question {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.accordion__question-text {
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+}
+.accordion__question-text:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.accordion__toggle {
+  all: unset;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.accordion__icon {
+  padding-left: 8px;
+}
+
+.accordion__answer {
+  padding: 8px 0;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.attribution {
+  padding: 8px;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 375px) {
+  body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+  }
+}
