@@ -24,7 +24,7 @@ html {
   --color-text: hsl(292, 42%, 14%);
   --accent-color: hsl(293, 20%, 49%);
   /* Fonts*/
-  --fs-large: 2.5rem;
+  --fs-large: 3.5rem;
   --fs-medium: 1.5rem;
   --fs-small: 1rem;
   --fw-large: 700;
@@ -50,7 +50,7 @@ body {
 
 .accordion {
   background-color: var(--white);
-  padding: 24px;
+  padding: 40px;
   border-radius: 16px;
   box-shadow: 0 0 48px 8px hsla(0, 0%, 40%, 0.5);
   width: min(85vw, 600px);
@@ -59,7 +59,7 @@ body {
 .accordion__title {
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
 }
 .accordion__title img {
   max-height: 30px;
@@ -81,7 +81,7 @@ body {
 .accordion__question {
   list-style: none;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -101,12 +101,23 @@ body {
 }
 .accordion__icon {
   padding-left: 8px;
+  height: 30px;
+  width: auto;
 }
 
 .accordion__answer {
   padding: 8px 0;
   line-height: 1.8;
   color: var(--color-text);
+}
+
+hr {
+  background-color: var(--color-highlight);
+  opacity: 0.2;
+  height: 2px;
+  border: none;
+  margin-bottom: 32px;
+
 }
 
 .attribution {
