@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Sunnyside Page" />
+    <meta name="description" content="Official Sunnyside agency landing page" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sunnyside Page" />
+    <meta
+      property="og:description"
+      content="Official Sunnyside agency landing page"
+    />
+    <meta
+      property="og:url"
+      content="https://ikmrn-sunnyside-landing.netlify.app/images/logo.svg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sunnyside Page" />
+    <meta
+      name=" twitter:description"
+      content="Official Sunnyside agency landing page"
+    />
+
+    <title>Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="header__logo">
+            <use xlink:href="./images/logo.svg#logo" />
+          </svg>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">About</li>
+          <li class="header__list-item">Services</li>
+          <li class="header__list-item">Projects</li>
+          <li class="header__list-item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <picture>
+        <source
+          media="(max-width): 750px"
+          srcset="./images/mobile/image-header.jpg"
+        />
+        <source
+          media="(min-width): 750px"
+          srcset="./images/desktop/image-header.jpg"
+        />
+        <img
+          src="images/mobile/image-header.jpg"
+          alt="Hero Image"
+          fetchpriority="high"
+          width="750"
+          height="1076"
+        />
+      </picture>
+      <h1 class="header__heading">We are creatives</h1>
+    </section>
+
+    Transform your brand We are a full-service creative agency specializing in
+    helping brands grow fast. Engage your clients through compelling visuals
+    that do most of the marketing for you. Learn more Stand out to the right
+    audience Using a collaborative formula of designers, researchers,
+    photographers, videographers, and copywriters, we’ll build and extend your
+    brand in digital places. Learn more Graphic design Great design makes you
+    memorable. We deliver artwork that underscores your brand message and
+    captures potential clients’ attention. Photography Increase your credibility
+    by getting the most stunning, high-quality photos that improve your business
+    image. Client testimonials We put our trust in Sunnyside and they delivered,
+    making sure our needs were met and deadlines were always hit. Emily R.
+    Marketing Director Sunnyside’s enthusiasm coupled with their keen interest
+    in our brand’s success made it a satisfying and enjoyable experience. Thomas
+    S. Chief Operating Officer Incredible end result! Our sales increased over
+    400% when we worked with Sunnyside. Highly recommended! Jennie F. Business
+    Owner About Services Projects Contact
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
