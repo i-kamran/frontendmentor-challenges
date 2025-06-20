@@ -1,0 +1,29 @@
+/* Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+html {
+  height: 100%;
+}
+
+/* Variables */
+
+:root {
+  /* Colors */
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --cream: hsl(30, 38%, 92%);
+  --grey: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
